@@ -103,7 +103,8 @@ public class Main {
 
         double totalWeight = (amountBanana * bananaWeight) + (amountMilk * milkWeight100ml) + (amountIcecream * icecreamWeight)
                 + (amountEggs * eggsWeight);
-        double totalWeightkg = (totalWeight / 1000);
+        int grPerKg = 1000;
+        double totalWeightkg = totalWeight / (double)grPerKg;
         System.out.println("Общий вес спортзавтрака " + totalWeightkg + " кг.");
         System.out.println();
     }
